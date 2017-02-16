@@ -3,7 +3,7 @@
     class Score {
 
       function calcScore($myWord) {
-        $wordScore =0;
+        $wordScore = 0;
         $wordScore += preg_match_all('/[a,e,i,o,u,l,n,r,s,t]/i', $myWord);
         $wordScore += (preg_match_all('/[d,g]/i', $myWord)*2);
         $wordScore += (preg_match_all('/[B, C, M, P]/i', $myWord)*3);

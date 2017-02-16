@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h4>Scrabble Word Score</h4>
+    <h5>Please enter a Word</h5>
+    <form action="/word" method="post">
+      <input type="text" name="word" value="">
+      <button type="submit" name="submit">Enter</button>
+    </form>
+    {% block results %}
+    {%endblock%}
+  </body>
+</html>
